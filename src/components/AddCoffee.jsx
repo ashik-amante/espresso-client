@@ -14,6 +14,8 @@ const AddCoffee = () => {
         const photo = form.photo.value;
         const newCoffee = {name,chef,supplier,taste,category,details,photo}
         console.log(newCoffee);
+        
+        // send data to the server
         fetch('http://localhost:5000/coffee',{
             method:'POST',
             headers:{
